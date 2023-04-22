@@ -7,7 +7,7 @@ node {
   
   stage('1. SCM - clone code') { 
       echo "Cloning the code now" // the comment will show up in the console
-      git branch: 'scripted', changelog: false, poll: false, url: 'https://github.com/LAduadjei/tomcat-webapp-war-4'
+      git branch: 'Scripted', changelog: false, poll: false, url: 'https://github.com/LAduadjei/tomcat-webapp-war-4/'
   }
   
   stage('2 Maven - build code') { 
@@ -36,4 +36,4 @@ node {
   
   stage('6 Deploy- tomcat') {
        echo 'deploy 2 tomcat'
-       deploy adapters: [tomcat9(credentialsId: '93782ba8-087a-44fc-8965-a08ee5647470', path: '', url: 'http://3.239.198.189:8080/')], contextPath: '/scripted', war: 'target/*war'
+       deploy adapters: [tomcat9(credentialsId: '93782ba8-087a-44fc-8965-a08ee5647470', path: '', url: 'http://3.239.198.189:8080/')], contextPath: '/Scripted', war: 'target/*war'
