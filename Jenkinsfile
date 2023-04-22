@@ -36,6 +36,6 @@ node {
   
   stage('6 Deploy- tomcat') {
        echo 'deploy 2 tomcat'
-       deploy adapters: [tomcat9(credentialsId: '1d8ec107-3b26-47f7-a3ae-7cd4f1c4f2c9', path: '', url: 'http://3.239.198.189:8080/')], contextPath: '/Scripted', war: 'target/*War'
+       deploy adapters: [tomcat9(credentialsId: '88252b84-e85f-486e-a277-9a375e0f3df9', path: '', url: 'http://3.239.198.189:8080/')], contextPath: '/Scripted', war: 'target/*war'
   }
 } 
