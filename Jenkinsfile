@@ -4,7 +4,7 @@ node {
   def mavenHome = tool name: "maven3"
   
   properties([ pipelineTriggers([pollSCM('* * * *')]) ])
-    }
+    
   stage('1. SCM - clone code') { 
       echo "Cloning the code now" // the comment will show up in the console
       git branch: 'Scripted', changelog: false, poll: false, url: 'https://github.com/LAduadjei/tomcat-webapp-war-4'
