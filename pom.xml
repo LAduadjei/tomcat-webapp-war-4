@@ -93,7 +93,7 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name> Nexus Repository</name>
+	      <name> Nexus Repository </name>
 	      <url> http://18.209.5.4:8081/repository/tomcat-webapp-prd/ </url>
 	    </repository>
 	    
